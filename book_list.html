@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8"/>
+	<title>Book List</title>
+</head>
+<body>
+
+	<h1>My book list</h1>
+
+
+	<script type="text/javascript">
+
+var pageNode = document.getElementsByTagName('body')[0];
+
+var myBooks = [
+{title: "The Hobbit",
+ author: "JRR Tolkien",
+ alreadyRead:true},
+{title: "The Book Thief",
+author: "Markus Zusak",
+alreadyRead:false},
+{title: "The Great Gatsby",
+ author: "F. Scott Fitzgerald",
+ alreadyRead:true}
+]
+
+
+
+for (var i = 0; i < myBooks.length; i++) {
+	var newParagraph = document.createElement('p');
+
+	if (myBooks[i].alreadyRead == true) {
+  newParagraph.innerHTML = "You have read " + myBooks[i].title + " by " + myBooks[i].author;
+  newParagraph.style.color="green";
+}
+	else
+	{newParagraph.innerHTML = "You have not yet read " + myBooks[i].title + " by " + myBooks[i].author;
+	newParagraph.style.color="red";}
+
+	pageNode.appendChild(newParagraph);
+}
+
+	</script>
+</body>
+</html>
