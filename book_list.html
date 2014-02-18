@@ -13,32 +13,38 @@
 
 var pageNode = document.getElementsByTagName('body')[0];
 
+
 var myBooks = [
 {title: "The Hobbit",
  author: "JRR Tolkien",
- alreadyRead:true},
+ alreadyRead:true,
+ picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEqf4fFEdhh_4Cviu9LWHLiNRbsKwxR88aD3IetRcniIB5lFrzODtPVo2J"},
 {title: "The Book Thief",
 author: "Markus Zusak",
-alreadyRead:false},
+alreadyRead:false, picture: "http://upload.wikimedia.org/wikipedia/en/8/8f/The_Book_Thief_by_Markus_Zusak_book_cover.jpg"},
 {title: "The Great Gatsby",
  author: "F. Scott Fitzgerald",
- alreadyRead:true}
+ alreadyRead:true,
+ picture: "http://upload.wikimedia.org/wikipedia/en/b/b0/Gatsby_1925_jacket.gif"}
 ]
 
 
 
 for (var i = 0; i < myBooks.length; i++) {
 	var newParagraph = document.createElement('p');
-
+	var newImg = document.createElement('img');
 	if (myBooks[i].alreadyRead == true) {
   newParagraph.innerHTML = "You have read " + myBooks[i].title + " by " + myBooks[i].author;
   newParagraph.style.color="green";
-}
+  newImg.src = myBooks[i].picture;}
 	else
 	{newParagraph.innerHTML = "You have not yet read " + myBooks[i].title + " by " + myBooks[i].author;
-	newParagraph.style.color="red";}
+	newParagraph.style.color="red";
+	newImg.src = myBooks[i].picture;}
+
 
 	pageNode.appendChild(newParagraph);
+	pageNode.appendChild(newImg);
 }
 
 	</script>
