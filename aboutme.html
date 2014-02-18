@@ -1,0 +1,50 @@
+
+ <!DOCTYPE html>
+ <html>
+  <head>
+   <meta charset="utf-8"/>
+   <title>About Me</title>
+ </head>
+ <body>
+   <h1>About Me</h1>
+
+   <ul>
+     <li>Nickname: <span id="nickname"></span>
+     <li>Favorites:  <span id="favorites"></span>
+     <li>Hometown: <span id="hometown"></span>
+    </ul>
+    <script type ="text/javascript">
+
+    var alan = document.getElementsByTagName('body')[0];
+    alan.style.fontFamily = 'Arial, sans-serif';
+
+    var nick = document.getElementById("nickname");
+    nick.innerHTML = "Alan";
+    var favs = document.getElementById("favorites");
+    favs.innerHTML = "Video Games, Movies, etc";
+    var home = document.getElementById("hometown");
+    home.innerHTML = "Toronto";
+
+    var listItems = document.getElementsByTagName('li');
+    						for (var i =0; i < listItems.length; i++) {
+    							listItems[i].className = "listitem";
+    						}
+/* document.getElementByTagName("li").className = "listitem"; */
+
+			var col = document.getElementsByClassName ('listitem');
+					for (var i = 0; i < col.length; i++) {
+						col[i].style.color = 'red';
+					}
+
+var pageNode = document.getElementsByTagName('body')[0];
+
+var newImg = document.createElement('img');
+newImg.src = 'http://gravatar.com/avatar/2d40d72353039d0df7e2446d62efa5af';
+newImg.style.border = '1px solid black';
+
+pageNode.appendChild(newImg);
+
+    </script>
+
+  </body>
+ </html>
