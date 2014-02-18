@@ -6,8 +6,24 @@
 
 // Open up www.google.com in Chrome or Firefox, and open up the console.
 // Find the Google logo and store it in a variable.
+
+document.getElementByID("hplogo")
+alan = document.getElementByID("hplogo")
+alan
+alan.style
+alan.style.background
+
 // Modify the source of the logo IMG so that it's a Yahoo logo instead.
+
+alan.style.background = 'url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbs_Zb7xMlA3ytnfDNHaTJZe9r5fMdjxgvgaeuhm6Fgi36JGOSKCOodcbk)'
+
+
 // Find the Google search button and store it in a variable.
+document.getElementById('gbqfsa')
+search = document.getElementById('gbqfsa')
+search.innerHTML = "Yahoooo!"
+
+
 // Modify the text of the button so that it says "Yahooo!" instead.
 
 // EXERCISE: About Me
