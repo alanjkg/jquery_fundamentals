@@ -103,10 +103,14 @@ setTimeout(function(){alert(n)},1000);
 
 // Remove all children of "#target" but h2
 // Hint: you can use .children, .not and .remove
+ $( "#target" ).children().not( "h2" ).remove();
 
 // EXERCISE: Without Children
 
 // Remove all 'div' whitch has no child elements.
 // Hint: you can use .not and .remove. Look closely at what options you can pass .not
+$("div:empty").remove();
+
+$(".target").not($(".target").not(":empty")).remove();
 
 });
