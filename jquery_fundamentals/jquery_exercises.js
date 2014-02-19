@@ -44,25 +44,37 @@ $(".target").eq(1).css("background-color", "blue");
 // Move "#child" from "#parent1" to "#parent2"
 // Hint: you can use .appendTo
 
+$("#child").appendTo("#parent2");
+
 // EXERCISE: Select A Option in A Select Box
 
 // Select the second option in the selectbox by script
 // Hint: you will have to select the option and can use .eq and .attr
+
+$('option').eq(1).attr("selected", true)
 
 // EXERCISE: Change Size
 
 // Make "#target" double size
 // Hint: you can use .css, .width and .height
 
+    $('#target').height('200px');
+    $('#target').width('200px');
+
+   $("#target").css({"width":"300px", "height":"200px"});
+
 // EXERCISE: Empty Elements
 // Hint: you can use .empty
 
 // Remove all children and text of "#target"
 
+    $('#target').empty();
+
 // EXERCISE: Delay
 
 // Show Alert with 1 second delay (Use "setTimeout")
 // Hint: you can use .setTimeout and alert
+setTimeout(function(){alert("Hello")},1000);
 
 // EXERCISE: Count
 
