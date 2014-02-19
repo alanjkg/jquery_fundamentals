@@ -31,6 +31,8 @@ $(".target").eq(1).css("background-color", "blue");
 // Disable the button
 // Hint: you will have to select the button and can use .attr
 
+  $("button").attr("disabled", "disabled");
+
 // EXERCISE: Uncheck CheckBoxes
 
 // Uncheck all checkboxes using jQuery
