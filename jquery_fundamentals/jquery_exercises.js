@@ -80,11 +80,18 @@ setTimeout(function(){alert("Hello")},1000);
 
 // Show the number of children in an alert
 // Hint: you can use .children, .length and alert or you could use .find, .size and alert. the alert should show 5
+// there are 7 children because the break tags also count
+var n = $('.child').length;
+setTimeout(function(){alert(n)},1000);
 
+ alert($("#target").children().length)
 // EXERCISE: Animate
 
 // Make "#target" double size with animation
 // Hint: you can use .animate, .width, and .height
+
+ $("#target").animate({"width":"300px", "height":"200px"});
+
 
 // EXERCISE: Alternate Color
 
