@@ -1,9 +1,13 @@
 // SOLUTIONS GO BELOW EACH EXERCISE
 
+
+$(document).ready(function() {
 // EXERCISE: Change Background
 
-// Change the background color of '#target' by script. 
+// Change the background color of '#target' by script.
 // Hint: you can use .css
+
+	$('#target').css('background-color', 'black')});
 
 // EXERCISE: Change Parent
 
@@ -80,4 +84,4 @@
 // Remove all 'div' whitch has no child elements.
 // Hint: you can use .not and .remove. Look closely at what options you can pass .not
 
-
+});
