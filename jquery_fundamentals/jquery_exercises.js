@@ -37,6 +37,7 @@ $(".target").eq(1).css("background-color", "blue");
 
 // Uncheck all checkboxes using jQuery
 // Hint: you will have to select the input and can use .removeAttr
+ $("input[type=checkbox]").removeAttr("checked",'checked');
 
 // EXERCISE: Change Parent
 
