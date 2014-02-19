@@ -7,22 +7,24 @@ $(document).ready(function() {
 // Change the background color of '#target' by script.
 // Hint: you can use .css
 
-	$('#target').css('background-color', 'black')});
+	$('#target').css('background-color', 'black');
 
 // EXERCISE: Change Parent
 
 // Change the text in the span, a child of "#target"
 // Hint: you can use .text
-
+$('#target span').text('testing');
 // EXERCISE: Create Clone
 
 // Create a clone of the span in "#target" and position it under the origin.
 // Hint: you can use .clone and .insertAfter
-
+$( "#target span").clone().insertAfter( "#target" );
 // EXERCISE: Use Filter
 
 // Change background color of the second ".target"
 // Hint: you can use .eq and .css
+$(".target").eq(1).css("background-color", "blue");
+ $('.target:eq(1)').css('background-color', 'black');
 
 // EXERCISE: Disable Buttons
 
