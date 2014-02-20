@@ -7,8 +7,8 @@
 // Open up www.google.com in Chrome or Firefox, and open up the console.
 // Find the Google logo and store it in a variable.
 
-document.getElementByID("hplogo")
-alan = document.getElementByID("hplogo")
+document.getElementById("hplogo")
+alan = document.getElementById("hplogo")
 alan
 alan.style
 alan.style.background
